@@ -1,167 +1,98 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marwa Bazzi | Dev Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marwa Bazzi | Portfolio</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;}
-    body{
-      font-family:"Poppins",sans-serif;
-      background:#0f172a;
-      color:white;
-    }
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Poppins;background:#0f172a;color:white;}
+nav{position:fixed;width:100%;padding:15px 40px;background:#0f172a;display:flex;justify-content:space-between;border-bottom:1px solid #1e293b;}
+nav a{color:white;margin-left:20px;text-decoration:none;}
 
-    nav{
-      position:fixed;
-      top:0;
-      width:100%;
-      background:#0f172a;
-      padding:15px 40px;
-      display:flex;
-      justify-content:space-between;
-      z-index:1000;
-      border-bottom:1px solid #1e293b;
-    }
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+.hero h1{font-size:3rem;color:#38bdf8;}
+.hero p{max-width:600px;margin-top:10px;}
 
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin-left:20px;
-    }
+section{padding:80px 20px;max-width:1000px;margin:auto;}
+.title{text-align:center;margin-bottom:30px;color:#a78bfa;}
 
-    .hero{
-      height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      padding:20px;
-    }
+.skills,.projects{display:grid;gap:20px;}
 
-    h1{
-      font-size:3rem;
-      color:#38bdf8;
-    }
-
-    .btn{
-      margin-top:20px;
-      padding:10px 20px;
-      background:#38bdf8;
-      border:none;
-      border-radius:8px;
-      cursor:pointer;
-      text-decoration:none;
-      color:#0f172a;
-      font-weight:bold;
-    }
-
-    section{
-      padding:80px 20px;
-      max-width:1000px;
-      margin:auto;
-    }
-
-    .title{
-      font-size:2rem;
-      margin-bottom:30px;
-      text-align:center;
-      color:#a78bfa;
-    }
-
-    .projects{
-      display:grid;
-      gap:20px;
-    }
-
-    .card{
-      background:#1e293b;
-      padding:20px;
-      border-radius:10px;
-    }
-
-    .card:hover{
-      transform:translateY(-5px);
-      transition:0.3s;
-    }
-
-    footer{
-      text-align:center;
-      padding:20px;
-      border-top:1px solid #1e293b;
-      margin-top:40px;
-    }
-  </style>
+.card{background:#1e293b;padding:20px;border-radius:10px;}
+footer{text-align:center;padding:20px;border-top:1px solid #1e293b;}
+</style>
 
 </head>
 
 <body>
 
 <nav>
-  <div><b>Marwa</b></div>
-  <div>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
+<div><b>Marwa</b></div>
+<div>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
 </nav>
 
 <section class="hero">
-  <h1>Marwa Bazzi</h1>
-  <p>
-    Développeuse web et mobile spécialisée en Flutter et développement web.  
-    Je crée des applications simples, efficaces et orientées utilisateur.
-  </p>
-  <a href="#projects" class="btn">Voir mes projets</a>
+<h1>Marwa Bazzi</h1>
+<p>Développeuse web et mobile spécialisée en Flutter et développement web. Je crée des applications simples et efficaces.</p>
+</section>
+
+<section id="skills">
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+<div class="card">HTML</div>
+<div class="card">CSS</div>
+<div class="card">JavaScript</div>
+<div class="card">Flutter</div>
+<div class="card">PHP</div>
+<div class="card">GitHub</div>
+</div>
+
 </section>
 
 <section id="projects">
-  <h2 class="title">Mes Projets</h2>
+<h2 class="title">Projects</h2>
 
-  <div class="projects">
+<div class="projects">
 
-```
 <div class="card">
-  <h3>📱 Application Assurance (Flutter)</h3>
-  <p>
-    Application mobile pour déclaration de sinistre.  
-    Fonctionnalités: formulaire, caméra, gestion utilisateur.
-  </p>
-  <p><b>Tech:</b> Flutter, PHP API</p>
+<h3>📱 Application Assurance</h3>
+<p>App Flutter pour déclaration de sinistre avec formulaire et caméra.</p>
 </div>
 
 <div class="card">
-  <h3>🏫 School Management Website</h3>
-  <p>
-    Site web pour gestion des étudiants, cours, paiements et communication.
-  </p>
-  <p><b>Tech:</b> HTML, CSS, PHP</p>
+<h3>🏫 School Management Website</h3>
+<p>Gestion étudiants, cours, paiements et communication.</p>
 </div>
-```
 
-  </div>
+</div>
+
 </section>
 
 <section id="contact">
-  <h2 class="title">Contact</h2>
-  <p style="text-align:center;">
-    📧 yourmail@gmail.com  
-  </p>
+<h2 class="title">Contact</h2>
+<p style="text-align:center;">yourmail@gmail.com</p>
 
-  <div style="text-align:center; margin-top:10px;">
-    <a href="https://github.com/" target="_blank">
-      <i class="fab fa-github"></i>
-    </a>
-  </div>
+<div style="text-align:center;margin-top:10px;">
+<a href="https://github.com/yourusername" target="_blank">
+<i class="fab fa-github"></i>
+</a>
+</div>
+
 </section>
 
 <footer>
-  <p>© 2026 Marwa Bazzi</p>
+<p>© 2026 Marwa Bazzi</p>
 </footer>
 
 </body>
